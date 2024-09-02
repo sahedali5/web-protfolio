@@ -236,3 +236,12 @@ main section {
     margin-top: 50px;
     text-align: center;
 }
+
+/* footer style */
+footer {
+    display: flex;
+    padding: 130px 230px;
+    margin-top: 130px;
+    background: #FFF8F3;
+
+}
