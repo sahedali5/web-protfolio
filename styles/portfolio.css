@@ -75,9 +75,9 @@ nav a {
 /* heder section */
 .header {
     background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png);
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -268,5 +268,99 @@ textarea {
     padding: 18px 30px;
     border: 0;
     width: 100%;
+
+}
+
+.hide {
+    display: none;
+}
+
+/* responsive area */
+/* small device */
+@media screen and (max-width:576px) {
+
+    nav,
+    .about,
+    .about-info-container,
+    .banner,
+    .primary-image,
+    .skills-container,
+    .resume-container,
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner .primary-image {
+        width: 100%;
+    }
+
+    .btn-primary {
+        margin-bottom: 15px;
+    }
+
+    #what-i-do-description {
+        padding: 15px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type=text],
+    .contact input[type=email],
+    textarea {
+        width: 80%;
+    }
+
+}
+
+/* medium devices  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav {
+        padding: 10px;
+    }
+
+    .header {
+        background-image: none;
+
+    }
+
+
+    .banner {
+        padding: 30px 5px 0 0px;
+        flex-direction: row-reverse;
+    }
+
+    .banner .primary-image {
+        width: 70%;
+
+    }
+
+    .btn-primary {
+        margin-bottom: 15px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .contact input[type=text],
+    .contact input[type=email],
+    textarea {
+        width: 80%;
+    }
+
+
 
 }
